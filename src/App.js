@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+
+} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import DetailNotFound from "./View/notfount/notfound";
+import SplashScreen from "./View/splash/splash";
+import Index from "./View/users/landingpage/Index";
+
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {loading ? (
+        <SplashScreen />
+      ) : (
+        <Routes>
+          <Route path="/" element={<Index />} />
+         
+          <Route path="*" element={<DetailNotFound />} />
+        </Routes>
+      )}
+    </Router>
   );
 }
 
