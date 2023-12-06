@@ -34,18 +34,18 @@ const AboutUs = () => {
   return (
     <div
       ref={ref}
-      className="flex justify-center w-screen bg-[#3E6EA4] -mt-40 p-4"
+      className="lg:flex md:flex justify-center w-screen bg-red-700   p-4 lg:-mt-12 "
     >
       <motion.img
         src={sekolah}
         alt="sekolah"
-        className="h-96"
+        className=" md:h-60 lg:h-96"
         initial={{ opacity: 0, x: -50 }}
         animate={controls}
       />
 
       <motion.div
-        className="grid grid-cols-1 border border-white p-4 rounded-xl shadow-2xl drop-shadow-2xl shadow-gray-700"
+        className="grid grid-cols-1 border border-white p-4 rounded-xl shadow-2xl drop-shadow-2xl shadow-gray-700 md:px-4 md:mr-8"
         initial={{ opacity: 0, x: 50 }}
         animate={controls}
       >

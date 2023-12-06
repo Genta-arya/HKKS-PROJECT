@@ -9,7 +9,6 @@ import CopyRight from "./Component/CopyRight";
 import ReviewForm from "./Component/ReviewForm";
 import CustomerReviews from "./Component/CustomersReview";
 
-
 const Index = () => {
   const contentRef = useRef(null);
   const wavyRef = useRef(null);
@@ -29,38 +28,39 @@ const Index = () => {
 
   return (
     <div>
-      <motion.div
-        className="fixed top-0 w-full z-10"
-        initial={{ opacity: 1 }}
-        animate={controls}
-      >
-        <Navbar
-          scrollToContent={() => handleScrollTo(contentRef)}
-          scrollToWavy={() => handleScrollTo(wavyRef)}
-          scrollTofq={() => handleScrollTo(fqRef)}
-          contentRef={contentRef}
-          wavyRef={wavyRef}
-          fqRef={fqRef}
-        />
-      </motion.div>
+      <div className=" lg:block md:block ">
+        <motion.div
+          className="fixed top-0 w-full z-10"
+          initial={{ opacity: 1 }}
+          animate={controls}
+        >
+          <Navbar
+            scrollToContent={() => handleScrollTo(contentRef)}
+            scrollToWavy={() => handleScrollTo(wavyRef)}
+            scrollTofq={() => handleScrollTo(fqRef)}
+            contentRef={contentRef}
+            wavyRef={wavyRef}
+            fqRef={fqRef}
+          />
+        </motion.div>
 
-      <div className="mt-16" ref={contentRef}>
-        <Content />
+        <div className="" ref={contentRef}>
+          <Content />
+        </div>
+        <div ref={wavyRef}>
+          <Wavy />
+        </div>
+
+        <div className="-mt-36 lg:-mt-72 md:-mt-72   bg-[#3E6EA4]" ref={fqRef}>
+          <FQ />
+        </div>
+
+        <CustomerReviews />
+      
+
+        <FooterHero />
+        <CopyRight />
       </div>
-      <div ref={wavyRef}>
-        <Wavy />
-      </div>
-
-      <div className="-mt-72 bg-[#3E6EA4]" ref={fqRef}>
-        <FQ />
-      </div>
-
-      <CustomerReviews />
-      <ReviewForm />
-
-
-      <FooterHero />
-      <CopyRight />
     </div>
   );
 };

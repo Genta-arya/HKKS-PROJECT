@@ -44,18 +44,26 @@ const Trust = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.8 }}
-      className="flex flex-col items-center bg-[#3E6EA4] w-screen p-12"
+      className=" flex flex-col  items-center  w-screen lg:p-12 md:p-12  mx-auto p-4  "
     >
-      <h1 className="text-white mb-4 font-sans font-extrabold text-xl">
-        Disponsori oleh :
-      </h1>
+      <div className="mt-5 hidden lg:block md:block max-[1280px]:mt-32">
+        <h1 className="text-white mb-4 font-sans font-extrabold text-xl ">
+          Disponsori oleh :
+        </h1>
+      </div>
 
-      <motion.div className="flex gap-8">
-        <motion.img src={icon1} alt="Charter" className="w-auto h-20" />
-        <motion.img src={icon2} alt="Charter" className="w-auto h-20" />
-        <motion.img src={icon3} alt="Charter" className="w-auto h-20" />
-        <motion.img src={icon4} alt="Charter" className="w-auto h-20" />
-        <motion.img src={icon5} alt="Charter" className="w-auto h-20" />
+      <div className="lg:hidden md:hidden mt-12 ">
+        <h1 className="text-white mb-4 font-sans font-extrabold text-sm ">
+          Disponsori oleh :
+        </h1>
+      </div>
+
+      <motion.div className="flex gap-2 lg:gap-12 md:gap-12 mt-1 lg:mt-5 md:mt-5">
+        <motion.img src={icon1} alt="Charter" className="w-auto md:h-20 lg:20 h-10" />
+        <motion.img src={icon2} alt="Charter" className="w-auto md:h-20 lg:20 h-10" />
+        <motion.img src={icon3} alt="Charter" className="w-auto md:h-20 lg:20 h-10" />
+        <motion.img src={icon4} alt="Charter" className="w-auto md:h-20 lg:20 h-10" />
+        <motion.img src={icon5} alt="Charter" className="w-auto md:h-20 lg:20 h-10" />
       </motion.div>
     </motion.div>
   );

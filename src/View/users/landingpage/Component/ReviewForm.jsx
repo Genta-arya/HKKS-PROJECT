@@ -67,7 +67,7 @@ function ReviewForm({ onSubmitReview }) {
   };
 
   return (
-    <div className="border-2 border-gray-200 p-12 mt-12">
+    <div className="border-2 border-gray-200 lg:p-12 md:p-12 p-4 rounded-xl mt-12">
       <h2 className="text-xl font-semibold mb-4 mt-12 ">Comment</h2>
       <form onSubmit={handleSubmit} className="flex flex-col items-start">
         <div className="mb-4 w-full">

@@ -18,7 +18,7 @@ const FQ = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className="flex justify-center p-8">
+    <motion.div className="flex justify-center p-4 lg:p-8 md:p-8 md:mt-12 lg:mt-0">
       <motion.div
         ref={ref}
         className="lg:w-1/2"
@@ -27,9 +27,11 @@ const FQ = () => {
         transition={{ duration: 1 }}
       >
         <div className="join join-vertical w-full bg-white p-8 rounded-lg shadow-md">
-            <div>
-                <h1 className="text-3xl  font-montserrat font-extrabold mb-8">F & Q</h1>
-            </div>
+          <div>
+            <h1 className="text-3xl  font-montserrat font-extrabold mb-8">
+              F & Q
+            </h1>
+          </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" checked="checked" />
             <div className="collapse-title text-xl font-medium">
@@ -77,9 +79,9 @@ const FQ = () => {
             <div className="collapse-content">
               <p>
                 Waktu pengerjaan pesanan baju sekolah dapat bervariasi
-                tergantung pada jumlah pesanan dan tingkat kustomisasi. Tim
-                kami akan memberikan perkiraan waktu yang akurat saat Anda
-                melakukan pemesanan.
+                tergantung pada jumlah pesanan dan tingkat kustomisasi. Tim kami
+                akan memberikan perkiraan waktu yang akurat saat Anda melakukan
+                pemesanan.
               </p>
             </div>
           </div>
@@ -90,9 +92,9 @@ const FQ = () => {
             </div>
             <div className="collapse-content">
               <p>
-                Ya, kami memiliki kebijakan pengembalian barang. Jika ada masalah
-                dengan pesanan Anda, silakan hubungi layanan pelanggan kami
-                untuk bantuan lebih lanjut.
+                Ya, kami memiliki kebijakan pengembalian barang. Jika ada
+                masalah dengan pesanan Anda, silakan hubungi layanan pelanggan
+                kami untuk bantuan lebih lanjut.
               </p>
             </div>
           </div>

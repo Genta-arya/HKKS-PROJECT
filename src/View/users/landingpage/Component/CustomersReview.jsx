@@ -57,8 +57,8 @@ function CustomerReviews() {
   };
 
   return (
-    <div className="container mx-auto mt-24 p-12">
-      <h2 className=" text-3xl font-bold mb-10 text-center text-white bg-black w-72 rounded-full p-2">
+    <div className="container mx-auto mt-24 lg:p-12 md:p-12 p-4">
+      <h2 className=" lg:text-3xl md:text-2xl text-md font-bold mb-10 text-center text-white bg-black w-72 rounded-full p-2">
         Ulasan Pelanggan
       </h2>
 
