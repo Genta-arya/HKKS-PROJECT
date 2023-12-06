@@ -46,7 +46,7 @@ const Trust = () => {
       transition={{ duration: 0.8 }}
       className=" flex flex-col  items-center  w-screen lg:p-12 md:p-12  mx-auto p-4  "
     >
-      <div className="mt-5 hidden lg:block md:block max-[1280px]:mt-32">
+      <div className="mt-5 hidden lg:block md:block max-[1270px]:mt-32   ">
         <h1 className="text-white mb-4 font-sans font-extrabold text-xl ">
           Disponsori oleh :
         </h1>
