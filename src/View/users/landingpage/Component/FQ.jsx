@@ -18,15 +18,15 @@ const FQ = () => {
   }, [controls, inView]);
 
   return (
-    <motion.div className="flex justify-center p-4 lg:p-8 md:p-8 md:mt-12 lg:mt-0">
+    <motion.div className="flex justify-center  lg:p-8 md:p-8 md:mt-40 lg:-mt-10 mt-12 p-4">
       <motion.div
         ref={ref}
-        className="lg:w-1/2"
+        className=""
         initial={{ opacity: 0, y: -20 }}
         animate={controls}
         transition={{ duration: 1 }}
       >
-        <div className="join join-vertical w-full bg-white p-8 rounded-lg shadow-md">
+        <div className="join join-vertical w-full   rounded-lg shadow-md lg:p-24">
           <div>
             <h1 className="text-3xl  font-montserrat font-extrabold mb-8">
               F & Q

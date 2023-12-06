@@ -51,12 +51,11 @@ const Index = () => {
           <Wavy />
         </div>
 
-        <div className="-mt-36 lg:-mt-72 md:-mt-72   bg-[#3E6EA4]" ref={fqRef}>
+        <div className="-mt-36 lg:-mt-72 md:-mt-72   " ref={fqRef}>
           <FQ />
         </div>
 
         <CustomerReviews />
-      
 
         <FooterHero />
         <CopyRight />
